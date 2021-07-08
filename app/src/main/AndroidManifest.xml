@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.itswatertime">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/waterui"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/waterui_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ItsWaterTime">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--icon, roundIcon : 만든 아이콘으로 변경
+        android:name에는 액티비티의 클래스 이름 적기 같은 패키지에 있으면 .을 찍거나 단순히 클래스 이름만 적음
+        다른 패키지에 있으면 패키지 이름을 포함한 완전 경로 적어야 함-->
+        <activity android:name=".SystemActivity"></activity>
+        <activity android:name=".WaterActivity"></activity>
+        <activity android:name=".EffectActivity"></activity>
+
+    </application>
+
+</manifest>

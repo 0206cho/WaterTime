@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--설정 이미지-->
+    <ImageView
+        android:id="@+id/imgsystem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/system" />
+    <!--이미지 제일 상단 가운데 정렬 상단 마진 20dp, src : 이미지 파일 경로-->
+
+    <!--나이-->
+    <TextView
+        android:id="@+id/txtage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:text="나이 입력 : "
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <!--나이 텍스트뷰 폰트 검정, 폰트 사이즈 30sp, 굵게 설정-->
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:hint="나이를 입력해주세요."
+        android:layout_toRightOf="@id/txtage"/>
+    <!--나이 에디트텍스트는 나이 텍스트뷰 오른쪽에 위치-->
+
+    <!--키-->
+    <TextView
+        android:id="@+id/txtheight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="20dp"
+        android:text="키 입력 : "
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="20dp"
+        android:hint="키를 입력해주세요."
+        android:layout_toRightOf="@id/txtheight"/>
+
+    <!--몸무게-->
+    <TextView
+        android:id="@+id/txtweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="20dp"
+        android:text="몸무게 입력 : "
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@id/txtweight"
+        android:hint="몸무게를 입력해주세요." />
+
+    <!--알람설정-->
+    <TextView
+        android:id="@+id/txtalarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_horizontal"
+        android:text="알람설정  "
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!--토글버튼 ON,OFF-->
+    <ToggleButton
+        android:id="@+id/togglebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="360dp"
+        android:layout_toRightOf="@id/txtalarm"
+        android:textOn="ON"
+        android:textOff="OFF"
+        android:onClick="onToggleClicked"/>
+
+    <!--입력한 내용 저장 버튼-->
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="440dp"
+        android:background="#DADA"
+        android:onClick="onbtnsaveClick"
+        android:text="저장"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:backgroundTint="#A8E1EF" />
+    <!--centerHorizontal="true" : 버튼 가운데 정렬
+    background, backgroundTint로 배경색 지정-->
+
+    <!--물의 양-->
+    <TextView
+        android:id="@+id/txtdrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnsave"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="하루 마셔야 할 물의 양 "
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/drinkday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtdrink"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text=" : 0L"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</RelativeLayout>

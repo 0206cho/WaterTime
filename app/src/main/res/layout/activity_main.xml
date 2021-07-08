@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"
+: 이게 있어야 버튼 색상 변경 가능-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop = "true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text="It's Water Time"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+    <!--
+    @+id/textView : 텍스트뷰 아이디
+    가로는 부모영역에 맞추고 세로는 내용물의 크기에 맞춤
+    alignParentTop = "true" : 가장 상단에 위치
+    center_horizontal : 가운데 정렬
+     (width, height과 모두 wrap_content일 경우 적용 x -> 이동할 곳이 없어서)
+     30sp : 텍스트 크기-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/waterimg" />
+    <!--src : 이미지 파일 경로
+    layout_centerHorizontal="true": 가운데 정렬-->
+
+    <!--물 섭취량 액티비티로 전환하는 버튼-->
+    <ImageButton
+        android:id="@+id/imgbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="60dp"
+        android:onClick="onClick1"
+        android:background="#DADA"
+        android:src="@drawable/iconwater" />
+
+    <!--물의 효능 액티비티로 전환하는 버튼-->
+    <ImageButton
+        android:id="@+id/imgbtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@+id/imgbtn1"
+        android:onClick="onClick2"
+        android:background="#DADA"
+        android:src="@drawable/iconeffect" />
+
+    <!--설정 액티비티로 이동하는 버튼-->
+    <ImageButton
+        android:id="@+id/imgbtn3"
+        android:layout_width="114dp"
+        android:layout_height="113dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/imgbtn2"
+        android:background="#DEDEEBF7"
+        android:onClick="onClick3"
+        android:src="@drawable/iconsystem" />
+</RelativeLayout>

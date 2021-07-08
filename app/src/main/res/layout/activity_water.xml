@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--물의 효능 이미지-->
+    <ImageView
+        android:id="@+id/imgeffect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/drinkwater" />
+    <!--이미지 제일 상단 가운데 정렬 상단 마진 20dp, src : 이미지 파일 경로-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="327dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imgeffect"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/waterimg" />
+    <!--src : 이미지 파일 경로
+    centerHorizontal="true" : 가운데 정렬-->
+
+    <!--목표 물 양-->
+    <EditText
+        android:id="@+id/drinkamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginLeft="15dp"
+        android:hint="목표 물의 양을 입력해주세요."/>
+
+    <TextView
+        android:id="@+id/txtml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_toRightOf="@id/drinkwater"
+        android:text="L"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnstore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/ml"
+        android:background="#A817181B"
+        android:onClick="onbtnAddClick"
+        android:text="입력"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFFFFF" />
+    <!--centerHorizontal="true" : 버튼 가운데 정렬
+    background, backgroundTint로 배경색 지정-->
+
+    <!--마신 물의 양 입력-->
+    <EditText
+        android:id="@+id/drinkwater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drinkamount"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:hint="마신 물의 양을 입력해주세요"/>
+
+    <TextView
+        android:id="@+id/ml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drinkamount"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/drinkwater"
+        android:text="L"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drinkamount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/ml"
+        android:background="#A817181B"
+        android:onClick="onbtnAddClick"
+        android:text="추가"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFFFFF" />
+    <!--centerHorizontal="true" : 버튼 가운데 정렬
+    background, backgroundTint로 배경색 지정-->
+
+    <TextView
+        android:id="@+id/drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drinkwater"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="오늘의 물 섭취량 "
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/onedrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drink"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/comma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drink"
+        android:layout_toRightOf="@id/onedrink"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="/"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/daydrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drink"
+        android:layout_toRightOf="@id/comma"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+</RelativeLayout>

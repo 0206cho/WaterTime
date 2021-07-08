@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--물의 효능 이미지-->
+    <ImageView
+        android:id="@+id/imgeffect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/effect" />
+    <!--이미지 제일 상단 가운데 정렬 상단 마진 20dp, src : 이미지 파일 경로-->
+
+    <!--내용-->
+    <TextView
+        android:id="@+id/txtage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:text="
+1. 섭취한 영양성분을 \n
+    체액에 녹여 세포로 운반 \n"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <!--텍스트뷰 폰트 검정, 폰트 사이즈 30sp, 굵게 설정-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="20dp"
+        android:text="2. 몸에 필요 없는 노폐물을 \n
+   세포에서 빼서 다양한\n
+    경로로 배출\n"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="20dp"
+        android:text="3. 체온 조절\n"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="20dp"
+        android:text="4. 세포의 삼투압 유지"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="20dp"
+        android:text="매일매일 물 마시기 프로젝트"
+        android:textColor="#ff0000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</RelativeLayout>
