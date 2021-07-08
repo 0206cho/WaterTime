@@ -33,9 +33,9 @@ public class SystemActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_system);
-        age = (EditText) findViewById(R.id.age); //나이 에디트 텍스트에서 받아온 값 age변수에 저장
-        height = (EditText) findViewById(R.id.height); //키 에디트 텍스트에서 받아온 값 height변수에 저장
-        weight = (EditText) findViewById(R.id.weight); //몸무게 에디트 텍스트에서 받아온 값 weight변수에 저장
+        age = (EditText) findViewById(R.id.age); //나이 에디트 텍스트에서 받아온 값 age 변수에 저장
+        height = (EditText) findViewById(R.id.height); //키 에디트 텍스트에서 받아온 값 height 변수에 저장
+        weight = (EditText) findViewById(R.id.weight); //몸무게 에디트 텍스트에서 받아온 값 weight 변수에 저장
 
         TextView daydrink;
         daydrink = (TextView) findViewById(R.id.drinkday); //오늘 마셔야 할 물의 양 출력하는 텍스트
